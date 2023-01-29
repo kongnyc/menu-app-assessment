@@ -1,4 +1,5 @@
 import React from 'react';
+import './Food.css'
 
 function Food({foodItem}) {
     console.log('FoodItem Rendered',foodItem.defaultOrder )
@@ -7,9 +8,9 @@ function Food({foodItem}) {
     return (
         <div>
             <ul className='FoodItem'>
-            <li>{id}</li>
-            <li>{name}</li>
-            <li>${price.toFixed(2)}</li>
+            <li>id: {id}</li>
+            <li>name: {name}</li>
+            <li>price: ${price.toFixed(2)}</li>
             <li>{shortDescription}</li>
             </ul>
 

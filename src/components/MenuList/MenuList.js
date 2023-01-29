@@ -19,6 +19,7 @@ function MenuList({MenuData}) {
     
     return (
         <div className='MenuList'>
+            <h1>Menu List</h1>
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
             {filteredData.map((item) => {
             return <Food key={item.id} foodItem={item}/>
